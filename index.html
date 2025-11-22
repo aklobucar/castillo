@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>castillo</title>
+
+    <!-- Optional stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Load p5 libraries from the libraries/ folder -->
+    <script src="libraries/p5.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+
+    <!-- Your sketch -->
+    <script src="libraries/sketch.js" defer></script>
+  </head>
+
+  <body>
+    <main>
+      just trial
+    </main>
+        <audio id="background-audio" src="rain.mp3"></audio>
+  <script>
+    window.onload = function() {
+      const audio = document.getElementById('background-audio');
+      audio.play().catch(error => {
+        console.error("Audio play failed:", error);
+      });
+    };
+  </script>
+  </body>
+</html>
